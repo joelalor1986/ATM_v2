@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ATM</title>
+</head>
+
+<body>
+    <div class="contenedor-principal" id="contenedor_principal">
+        <header class="header">
+            <div class="logo">ATM</div>
+            <p class="tema"><span>{</span> fucniones, arreglos, ciclos, DOM, objetos <span>}</span></p>
+        </header>
+        <main class="main">
+            <h3 class="saludo"></h3>
+            <nav class="navegacion">
+                <a href="#" class="boton" id="btnSaldo">Consultar saldo</a>
+                <a href="#" class="boton" id="btnAgregarSaldo">Agregar saldo</a>
+                <a href="#" class="boton" id="btnRetirar">Retirar</a>
+                <a href="index.html" class="boton">Cerrar sesion</a>
+            </nav>
+            
+            <form id="frmLogin" class="form">
+                <div class="campo">
+                    <label for="usuario" class="label">Nombre de usuario:</label>
+                    <input type="text" name="usuario" id="usuario" class="txtcampo">
+                </div>
+                <div class="campo">
+                    <label for="password" class="label">Contraseña:</label>
+                    <input type="password" name="password" id="password" class="txtcampo">
+                </div>
+                
+                <div class="campo">
+                   <input type="submit" value="Iniciar sesion" id="btnLogin" class="boton">
+                </div>
+            </form>
+            <div id="mostrarSaldo"></div>
+            <form action="" class="form" id="frmAgregarSaldo">
+                <div class="campo">
+                    <label for="monto" class="label">Monto a agregar:</label>
+                    <input type="text" name="monto" id="montoAgregar" class="txtcampo">
+                </div>
+                <div class="campo">
+                    <input type="submit" value="Agregar saldo" id="btnAgregarSaldo" class="boton">
+                 </div>
+            </form>
+            <form action="" class="form" id="frmRetirarSaldo">
+                <div class="campo">
+                    <label for="monto" class="label">Monto a retirar:</label>
+                    <input type="text" name="monto" id="montoRetirar" class="txtcampo">
+                </div>
+                <div class="campo">
+                    <input type="submit" value="Retirar saldo" id="btnRetirarSaldo" class="boton">
+                 </div>
+            </form>
+        </main>
+    </div>
+  
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
